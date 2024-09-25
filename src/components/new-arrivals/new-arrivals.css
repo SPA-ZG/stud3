@@ -1,0 +1,66 @@
+/* New Arrivals Panel */
+.new-arrivals-panel {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.new-arrivals-panel h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 70px;
+  font-weight: 100;
+}
+
+/* New Arrival Styles */
+
+
+.new-arrival .border {
+  border-color: rgb(10, 10, 10) !important;
+  border-style: solid;
+  border-width: 1000;
+}
+
+.new-arrival .book-thumbnail {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.new-arrival .book-title {
+  color: #616799 !important;
+}
+
+.new-arrival .book-description,
+.new-arrival .input-group .price:before {
+  color: #080808 !important;
+}
+
+.new-arrival .input-group .price:before {
+  content: '$';
+  z-index: 1;
+  display: inline-block;
+  left: 0;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.new-arrival .input-group input[type=text] {
+  width: 90px;
+  margin-right: 10px;
+  background: transparent;
+  border: none;
+  color: #080808;
+  font-size: 18px;
+  padding: 15px 15px 0 15px;
+  font-weight: 600;
+}
+
+.new-arrival button.add-to-cart {
+  width: 100px;
+  height: 50px;
+  border: 0;
+  padding: 0;
+}

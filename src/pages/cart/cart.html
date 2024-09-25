@@ -1,0 +1,41 @@
+
+  <div class="wrapper">
+    <TopNavbar />
+
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <h1>Checkout form</h1>
+          <p class="lead"></p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-md-12">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Your cart</span>
+              <span class="badge bg-primary rounded-pill">{{ count }}</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm" v-for="item in contents">
+                <div>
+                  <h6 class="my-0">{{ item.title }}</h6>
+                  <small class="text-muted">{{ item.author }}</small>
+                </div>
+                <span class="text-muted"><span v-if="item.quantity > 1">{{ item.quantity }}x</span> {{ item.currency }}{{ item.price }}</span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total ({{ currency.name }})</span>
+                <strong>{{ currency.symbol }}{{ total }}</strong>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <Footer />
+      </main>
+    </div>
+   
+  </div>
+
+
